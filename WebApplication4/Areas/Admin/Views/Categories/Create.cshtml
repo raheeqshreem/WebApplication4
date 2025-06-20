@@ -1,0 +1,12 @@
+﻿@model Category
+
+@section TitleSection {
+    Create
+ }
+ <form method="post"action="/admin/categories/create" >
+<div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input name="Name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+</div>
+    <button type="submit" class="btn btn-primary"> Create</button>
+</form>

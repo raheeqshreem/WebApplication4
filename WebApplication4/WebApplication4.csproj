@@ -7,15 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\Areas\Admin\Views\Shared\_Layout.cshtml.css" />
+    <Content Remove="Areas\Admin\Views\Shared\_Layout.cshtml.css" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="wwwroot\Areas\Customer\Controllers\HomeController.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\Areas\Admin\Views\Shared\_Layout.cshtml.css" />
+    <Content Include="Areas\Admin\Controllers\CategoriesController.cs" />
+    <Content Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Content Include="Areas\Customer\Controllers\HomeController.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +23,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

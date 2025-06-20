@@ -284,20 +284,43 @@ class="brand-image opacity-75 shadow" />
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../index.html" class="nav-link">
+                    <a href="/admin/categories/index" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Index</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="../index.html" class="nav-link">
+                                    <a href="/admin/categories/create" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Create</p>
                     </a>
                   </li>
               
             </ul>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon bi bi-speedometer"></i>
+                                <p>
+                                    Products
+                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/admin/products/index" class="nav-link">
+                                        <i class="nav-icon bi bi-circle"></i>
+                                        <p>Index</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="/admin/products/create" class="nav-link">
+                                        <i class="nav-icon bi bi-circle"></i>
+                                        <p>Create</p>
+                                    </a>
+                                </li>
+
             <!--end::Sidebar Menu-->
           </nav>
         </div>
@@ -313,8 +336,8 @@ class="brand-image opacity-75 shadow" />
             <!--begin::Row-->
             <div class="row">
               <div class="col-sm-6"> <h3 class="mb-0">
-                  @RenderSection("TitleSection",False);
-                  </h3></div>
+                                @RenderSection("TitleSection");
+                            </h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -335,7 +358,7 @@ class="brand-image opacity-75 shadow" />
             <div class="row">
               <div class="col-12">
                 <!-- Default box -->
-              @renderBody()
+              @RenderBody()
                 <!-- /.card -->
               </div>
             </div>
